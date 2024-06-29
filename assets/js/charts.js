@@ -37,7 +37,15 @@ new Chart(ctx, {
       },
     },
     scales: {
+      x: {
+        grid: {
+          display: false,
+        },
+      },
       y: {
+        grid: {
+          display: false,
+        },
         beginAtZero: true,
         suggestedMax: maxDataValue1 + minDataValue1,
       },
@@ -85,7 +93,15 @@ new Chart(ctx2, {
       },
     },
     scales: {
+      x: {
+        grid: {
+          display: false,
+        },
+      },
       y: {
+        grid: {
+          display: false,
+        },
         beginAtZero: true,
         suggestedMax: maxDataValue2 + minDataValue2,
       },
@@ -109,7 +125,6 @@ const months = [
   "Nov",
   "Dec",
 ];
-
 
 const dataset1 = [65, 59, 80, 81, 56, 55, 40, 45, 60, 75, 70, 90];
 const dataset2 = [28, 48, 40, 19, 86, 27, 90, 85, 80, 95, 60, 70];
@@ -150,14 +165,21 @@ const myChart = new Chart(ctx3, {
   },
   options: {
     scales: {
+      x: {
+        grid: {
+          display: false,
+        },
+      },
       y: {
+        grid: {
+          display: false,
+        },
         beginAtZero: true,
         suggestedMax: maxDataValue + minDataValue,
       },
     },
   },
 });
-
 
 const dataset44 = [20, 30, 40, 60, 40, 30, 50];
 const maxDataValue4 = Math.max(...dataset44);
@@ -180,9 +202,9 @@ new Chart(ctx4, {
       {
         label: "Customers",
         data: dataset44,
-        backgroundColor: 'rgb(75, 192, 192)', // Filled bar color
-        borderColor: 'rgb(75, 192, 192)', // Border color
-        borderWidth: 0 // Border width
+        backgroundColor: "rgb(75, 192, 192)",
+        borderColor: "rgb(75, 192, 192)",
+        borderWidth: 0,
       },
     ],
   },
@@ -195,7 +217,15 @@ new Chart(ctx4, {
       },
     },
     scales: {
+      x: {
+        grid: {
+          display: false,
+        },
+      },
       y: {
+        grid: {
+          display: false,
+        },
         beginAtZero: true,
         suggestedMax: maxDataValue4 + minDataValue4,
       },

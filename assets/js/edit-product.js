@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
   );
 
   function putImages(files, container, reset = false, type = "img") {
-    container.innerHTML = "";
+    if (reset) container.innerHTML = "";
     for (let i = 0; i < files.length; i++) {
       let element =
         type === "img"

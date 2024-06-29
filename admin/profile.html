@@ -24,7 +24,7 @@
   <div class="wrapper">
     <!--sidebar wrapper -->
     <div class="sidebar-wrapper" data-simplebar="true">
-    
+
 
     </div>
     <!--end sidebar wrapper -->
@@ -38,43 +38,46 @@
     <!--Start page wrapper -->
     <div class="page-wrapper">
       <div class="page-content">
-    
+
         <div class="pageCont">
-          <div class="conta ">
-            <h3>User Profile </h3>
+          <div class="conta">
+            <div class="twoForms">
+              <div class="form">
+                <h3>User Profile </h3>
+                <div class="input">
+                  <span>Email : </span>
+                  <input type="email" placeholder="email@example.com">
+                </div>
+                <div class="input">
+                  <span> Password :</span>
+                  <div class="select">
+                    <input type="password" placeholder=" ****** ">
+                    <i class="fa-light fa-eye-slash" id="passwordShow"></i>
+                  </div>
+                </div>
+                <div class="input">
+                  <label for="file3">User Photo : </label>
+                  <div class="customInput">
+                    <input type="file" accept="image/*" hidden id="file3">
+                    <label for="file3">Upload <i class="fa-regular fa-arrow-up-from-bracket"></i></label>
+                  </div>
+                  <div class="pImages" id="imgcont"></div>
+                </div>
+                <div class="wbtns twoBtt">
+                  <a href="##" class="btn">logout</a>
+                  <button type="submit" class="btn">save</button>
+                </div>
+              </div>
+              <div class="form">
+                <h3>Payment Methods </h3>
+                <div class="input">
+                  <span>Add Payment Method :</span>
+                  <input type="text" placeholder="Payment Method">
+                </div>
+                <button type="submit" class="btn">Add</button>
+              </div>
+            </div>
           </div>
-          <form class="conta">
-            <div class="form w430 pt20">
-              <div class="input">
-                <span>Email : </span>
-                <input type="email" placeholder="email@example.com">
-              </div>
-              <div class="input">
-                <span> Password :</span>
-                <div class="select">
-                  <input type="password" placeholder=" ****** ">
-                  <i class="fa-light fa-eye-slash" id="passwordShow"></i>
-                </div>
-              </div>
-              <div class="input">
-                <label for="file3">User Photo : </label>
-                <div class="customInput">
-                  <input type="file" accept="image/*" hidden id="file3">
-                  <label for="file3">Upload <i class="fa-regular fa-arrow-up-from-bracket"></i></label>
-                </div>
-                <div class="pImages" id="imgcont"></div>
-              </div>
-              <h3>Payment Methods </h3>
-              <div class="input">
-                <span>Add Payment Method :</span>
-                <input type="text" placeholder="Payment Method">
-              </div>
-            </div>
-            <div class="wbtns twoBtt">
-              <a href="##" class="btn">logout</a>
-              <button type="submit" class="btn">save</button>
-            </div>
-          </form>
         </div>
       </div>
     </div>

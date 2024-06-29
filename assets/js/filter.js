@@ -16,7 +16,7 @@ const formattedDate = formatDate(date);
 input.value = date.toISOString().split('T')[0];
 
 // Add event listener to the input field
-input.addEventListener('change', function() {
+input.addEventListener('input', function() {
   const userDate = new Date(input.value);
   dateInner.textContent = formatDate(userDate);
 });

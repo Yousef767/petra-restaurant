@@ -1605,6 +1605,7 @@ h6.mb-0 {
   width: 250px;
   height: 150px;
   border-radius: 5px;
+  border: 1px solid $main;
 }
 .pImage img {
   position: absolute;
@@ -1725,6 +1726,7 @@ h6.mb-0 {
   transform: translateY(0);
   .btn {
     text-transform: uppercase;
+    margin: 0;
     &:nth-child(1) {
       background-color: #f44336;
     }
@@ -2062,5 +2064,260 @@ h6.mb-0 {
     h1{
       font-size: 1.5em;
     }
+  }
+}
+.twoForms{
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  padding-top: 20px;
+  .form{
+    width: 50%;
+  }
+}
+.twoIns{
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  .input{
+    width: calc(50% - 10px);
+  }
+}
+@media (max-width:600px) {
+  .twoIns{
+    flex-direction: column;
+    .input{
+      width: 100%;
+    }
+  }
+}
+.stock{
+  span{
+    padding-bottom: 5px;
+    font-size: 1em;
+    font-weight: 600;
+    color: #000;
+    text-transform: capitalize;
+  }
+}
+.inSt{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding-top: 10px;
+  user-select: none;
+  input{
+    width: 17px;
+    height: 17px;
+  }
+  label,span,.a{
+    width: 105px;
+    text-align: center;
+    line-height: 1;
+    border-radius: 5px;
+    color: #fff;
+    padding: 3px 0;
+    font-weight: 600;
+    cursor: pointer;
+  }
+}
+.gS{
+  label,span,.a{
+    background-color: #008000;
+  }
+  input{
+    accent-color: #008000;
+  }
+}
+.rS{
+  label,span,.a{
+    background-color: #ff6877;
+  }
+  input{
+    accent-color: #ff6877;
+  }
+}
+@media (max-width:900px) {
+  .twoForms{
+    flex-direction: column;
+    .form{
+      width: 100%;
+    }
+  }
+}
+.item{
+  width: 200px;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: #fff;
+}
+.itemImg{
+  @include flex();
+  width: 100%;
+  height: 150px;
+  overflow: hidden;
+  position: relative;
+  img{
+    width: 90%;
+    height: 90%;
+    object-fit: contain;
+    position: absolute;
+    transition: .3s all ease;
+    /*&:hover{
+      transform: scale(1.1) rotate(5deg);
+    }*/
+  }
+}
+.itemText{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  font-weight: 600px;
+  p{
+    font-size: 1.1em;
+  }
+}
+.price{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  span{
+    &:nth-child(1){
+      font-weight: 700;
+      font-size: 1.1em;
+    }
+    i{
+      color: gold;
+      padding-right: 3px;
+    }
+  }
+}
+.swiper{
+  width: 100%;
+  height: 100%;
+}
+@media (max-width:350px) {
+  .item{
+    margin: 0 auto;
+  }
+}
+.swiperContiner{
+h3{
+  padding-bottom: 20px;
+  text-transform: uppercase;
+}
+}
+.mySwiper2{
+  padding-top: 20px;
+  user-select: none;
+  .swiper-wrapper {
+    display: flex;
+  }
+  .swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 5px 30px;
+    width: fit-content;
+    font-size: 16px;
+    color: #000;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .3s all ease;
+    text-transform: capitalize;
+  }
+  .active{
+    color: #fff;
+    background-color: $main;
+}
+}
+.gridInner{
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+.gridText{
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  .p15{
+    padding: 15px 0;
+    p{
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      color: #ababab;
+      font-weight: 700;
+      font-size: 0.9em;
+    }
+  }
+}
+.raw{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.gridItem{
+  width: calc(100% / 3 - 15px);
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  overflow: hidden;
+  background-color: #fff;
+}
+@media (max-width:1250px) {
+  .gridItem{
+    width: calc(100% / 2 - 15px);
+  }
+}
+@media (max-width:700px) {
+  .gridItem{
+    width: calc(100%);
+  }
+}
+.gridImg{
+  width: 100%;
+  height: 200px;
+  img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+  }
+}
+.BW{
+  color: #000;
+  font-weight: 700;
+  font-size: 1.1em;
+}
+.GW{
+  color: #ababab;
+  font-weight: 700;
+}
+.inSt.ptb5{
+  .a{
+    padding-top: 7px;
+    padding-bottom: 7px;
+  }
+}
+.blackBac{
+  .a{
+    background-color: #000;
   }
 }
